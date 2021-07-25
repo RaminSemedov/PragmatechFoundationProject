@@ -1,0 +1,29 @@
+body{
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+.header{
+    width: 100%;
+    border:1px solid black;
+    margin-bottom: 5px;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    min-height: 600px;
+}
+.content{
+    width: 38%;
+    border:1px solid black;
+    margin-right: 5px;
+}
+.sidebar{
+    width: 30%;
+    border:1px solid black;
+}
+.footer{
+    width: 100%;
+    border:1px solid black;
+    margin-top: 5px;
+}
