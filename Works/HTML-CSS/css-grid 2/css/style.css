@@ -1,0 +1,15 @@
+.box{
+    border:1px solid black;
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 400px 400px 50px;
+}
+.grid-header{
+    grid-column: 1/4;
+}
+.grid-footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
