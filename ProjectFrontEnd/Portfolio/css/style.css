@@ -24,7 +24,7 @@ a{
     color:#fff;
       
 }
-
+/* header start */
 .header{
     background:#fff url(../img/slider/image1.webp) no-repeat center center ;
     background-size: cover;
@@ -134,3 +134,4 @@ display: inline-block;
     background-color: #fff;
     color: #000;
 }
+/* header end */
