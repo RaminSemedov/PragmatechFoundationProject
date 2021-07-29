@@ -29,6 +29,13 @@ a{
     background:#fff url(../img/slider/image1.webp) no-repeat center center ;
     background-size: cover;
     height: 100vh;
+    transition: 1s  ease;
+}
+.header-second{
+    background:#fff url(../img/slider/image2.webp) no-repeat center center ;
+    background-size: cover;
+    height: 100vh;
+    transition: 1s ease;
 }
 .header-contacts{
     height: 45px;
