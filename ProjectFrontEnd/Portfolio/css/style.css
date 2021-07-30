@@ -22,16 +22,19 @@ ul{
 a{
     text-decoration: none;
     color:#fff;
+    
       
 }
 /* header start */
+
+
 .header{
     background:#fff url(../img/slider/image1.webp) no-repeat center center ;
     background-size: cover;
     height: 100vh;
     transition: 1s  ease;
-}
-.header-second{
+   }
+.header-second {
     background:#fff url(../img/slider/image2.webp) no-repeat center center ;
     background-size: cover;
     height: 100vh;
@@ -99,10 +102,14 @@ display: inline-block;
 
 }
 
-.header-info{
+.info{
     padding: 45px 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    transition:1s  ease
 }
-.header-info h3{
+.info h3{
     font-size: 13px;
     font-weight: 700;
     line-height: 23px;
@@ -111,7 +118,7 @@ display: inline-block;
     margin-bottom: 15px;
 }
 
-.header-info h1{
+.info h1{
     font-family: "Roboto Condensed",sans-serif;
     font-size: 55px;
     font-weight: 700;
@@ -120,10 +127,36 @@ display: inline-block;
     margin-bottom: 40px;
 }
 
-.hader-info{
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 24px;
+.slider-circles{
+    height: 40px;
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+   
+    
+}
+.circle{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border:1px solid gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+}
+.inner-circle{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color:gray;
+    transition: 1s ease;
+    
+}
+.active-circle{
+    background-color: #fff;
+    transition: 1s ease;
 }
 
 .header-buttons a{
