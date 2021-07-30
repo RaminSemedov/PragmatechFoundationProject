@@ -137,18 +137,18 @@ display: inline-block;
     
 }
 .circle{
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
-    border:1px solid gray;
+    border:2px solid gray;
     display: flex;
     align-items: center;
     justify-content: center;
   
 }
 .inner-circle{
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     border-radius: 50%;
     background-color:gray;
     transition: 1s ease;

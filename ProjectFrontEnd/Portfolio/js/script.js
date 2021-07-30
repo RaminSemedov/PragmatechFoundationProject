@@ -5,10 +5,8 @@ const second=document.querySelector('.header-info-second');
 const circles=document.querySelectorAll('.inner-circle');
 
 
-function changeBg(){
-    
-    header.classList.toggle('header-second');
-   
+function changeBg(){    
+    header.classList.toggle('header-second');   
 }
 
 let flag=true;
@@ -26,11 +24,8 @@ function changeText(){
         circles[0].classList.remove('active-circle');
         circles[1].classList.add('active-circle');
         flag=true; 
-     }
-           
-    
-    
-    
+     }       
+   
 }
 changeText();
 setInterval(changeBg,4000);
