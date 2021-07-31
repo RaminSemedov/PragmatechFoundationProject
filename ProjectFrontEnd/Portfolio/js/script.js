@@ -1,8 +1,10 @@
+
 const header=document.querySelector('.header');
 const info=document.querySelector('.info');
 const first= document.querySelector('.header-info-firs');
 const second=document.querySelector('.header-info-second');
 const circles=document.querySelectorAll('.inner-circle');
+
 
 
 function changeBg(){    
