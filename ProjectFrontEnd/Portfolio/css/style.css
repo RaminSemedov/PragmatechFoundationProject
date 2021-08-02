@@ -13,6 +13,7 @@ body{
 }
 h1,h2,h3,h4,h5,h6{
     display: inline-block;
+
   
 }
 ul{
@@ -33,6 +34,7 @@ a{
     background-size: cover;
     height: 100vh;
     transition: 1s  ease;
+    
    }
 .header-second {
     background:#fff url(../img/slider/image2.webp) no-repeat center center ;
@@ -72,10 +74,14 @@ a{
 }
 
 .header-navigation{
-    background:rgba(255,255,255,.1);
-    padding: 30px 0;
+    background:#ffffff1a;
+    padding: 30px 0;   
+    position: relative;
+    top: 0;
+    
 
 }
+
 .header-navigation .logo{
     font-size: 24px;
     font-weight: 700;
@@ -201,11 +207,12 @@ display: inline-block;
      margin-bottom: 50px;
  }
  .solution-box{
-     width: 225px;
-     height: 225px;
+     width: 235px;
+     height: 215px;
      background-color: #1a1a1a;
      border-radius:5px;
      padding: 20px;
+     margin-left:15px;
      margin-bottom: 40px;
      position: relative;
     }
@@ -228,6 +235,8 @@ display: inline-block;
  .solution .active{
      background-color: #cdb30c;
      color:#000;
+     margin-left: 0;
+     
  }
  .solution .active i{
      color:#000;
@@ -244,7 +253,7 @@ display: inline-block;
     align-items: center;
     justify-content: center;
     color:#fff;
-    font-size: 12px;
+    font-size:18px;
     font-weight: 600;
     left: 120px;
     bottom:-20px;
@@ -267,3 +276,90 @@ display: inline-block;
 
 
   /* solution end */
+
+  /* Creative start */
+  .creatives{
+      height: 700px;
+      color:#000;
+      
+  }
+  .creatives .creative-img{      
+   height: 700px;
+   background:url(../img/creative/creative-img.webp)   no-repeat  center  center ;
+   background-size: cover;
+   box-shadow: 0px 2px 25px -13px rgb(0 0 0 / 26%);
+    }
+
+.creative-info{
+    padding: 0  0  0 57px;
+    position: relative;
+
+    
+}
+.creatives .creative-info h5{
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 23px;
+    color:#cdb30c;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    
+
+}
+.creatives .creative-info h2{
+    font-size: 34px;
+    font-family: "Roboto Condensed" "san-serif";
+    font-weight: 700;
+    line-height: 48px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color:rgba(0,0,0,0.8);
+    margin-bottom: 35px;
+}
+.creatives .creative-info p{
+    
+    font-size: 16px;
+    line-height:29px ;
+    font-weight: 400;
+    color:#999;
+    margin-bottom: 60px;
+}
+.creatives .experience{
+    background-color: #cdb30c;
+    padding: 20px;
+    color:#fff;
+    position: absolute;
+    width: 410px;
+    left: -50px;
+}
+.creatives .experience i{
+    width: 70px;
+    height: 70px;
+    color: #fff;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 36px;
+    display: inline-flex;
+    margin-right: 20px;
+    
+}
+.creatives .experience h2{
+    margin-bottom: 0;
+    color:#fff;
+    
+}
+.creatives .experience h3{
+
+    font-size: 12px;
+    font-weight: 14;
+    color:rgba(255, 255, 255, 0.9);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+  
+  
+  /* Creative end */

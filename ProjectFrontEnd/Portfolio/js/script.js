@@ -5,6 +5,11 @@ const first= document.querySelector('.header-info-firs');
 const second=document.querySelector('.header-info-second');
 const circles=document.querySelectorAll('.inner-circle');
 
+const nav=document.querySelector('.header-navigation');
+
+const expCounter=document.querySelector('.experience h2');
+
+
 
 
 function changeBg(){    
@@ -32,3 +37,18 @@ function changeText(){
 changeText();
 setInterval(changeBg,4000);
 setInterval(changeText,4000);
+
+
+let counter=1;
+function countYears(){
+   expCounter.innerHTML=counter;
+   if(counter<42)
+   counter++;
+}
+
+window.addEventListener("scroll",()=>{
+   if(window.scrollY>1260){
+      setInterval(countYears,300);
+   
+   }
+})
