@@ -363,3 +363,60 @@ display: inline-block;
   
   
   /* Creative end */
+  /* Information start */
+
+  .information{
+      height: 300px;     
+      background: url(../img/Information/xbg_4.jpg.pagespeed.ic.Hn_rroj71A.webp) no-repeat  center center;
+      background-attachment: fixed;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+     
+  }
+  
+
+  .information .info-box{
+    color:#fff;
+    font-size: 24px;
+    display: inline-block;
+    /* width: 235px; */
+}
+.information .info-box .icon-box{
+    background-color:#cdb30c ;
+    width: 70px;
+    height: 70px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:5px;
+    display: inline-block;
+    margin-right: 20px;
+}
+.information .info-box i{
+    font-size: 50px;
+    margin:2px 0 2px 3px;
+   
+}
+.information .info-box h2 {
+    font-size: 32px;
+    font-weight: 700;
+    /* line-height: 58px; */
+    
+  
+
+}
+
+.information .info-box h4{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+
+
+  /* Information end */
+
+

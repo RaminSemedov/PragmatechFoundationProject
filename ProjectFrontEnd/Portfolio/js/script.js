@@ -48,7 +48,6 @@ function countYears(){
 
 window.addEventListener("scroll",()=>{
    if(window.scrollY>1260){
-      setInterval(countYears,300);
-   
+      setInterval(countYears,300);   
    }
 })
