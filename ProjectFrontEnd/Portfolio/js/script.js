@@ -4,11 +4,16 @@ const info=document.querySelector('.info');
 const first= document.querySelector('.header-info-firs');
 const second=document.querySelector('.header-info-second');
 const circles=document.querySelectorAll('.inner-circle');
-
 const nav=document.querySelector('.header-navigation');
-
 const expCounter=document.querySelector('.experience h2');
+const menuBtn=document.querySelector(".menu-btn");
+const headerNavMobile=document.querySelector(".header-nav-mobile");
 
+
+menuBtn.addEventListener("click",()=>{
+   headerNavMobile.classList.toggle("hnm-full");
+
+})
 
 
 
