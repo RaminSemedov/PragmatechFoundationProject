@@ -34,6 +34,7 @@ a{
     background-size: cover;
     height: 100vh;
     transition: 1s  ease;
+    overflow: hidden;
     
    }
 .header-second {
