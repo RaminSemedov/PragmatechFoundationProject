@@ -7,17 +7,18 @@ const circles=document.querySelectorAll('.inner-circle');
 const nav=document.querySelector('.header-navigation');
 const expCounter=document.querySelector('.experience h2');
 const menuBtn=document.querySelector(".menu-btn");
-const headerNavMobile=document.querySelector(".header-nav-mobile");
+const headerNavigation=document.querySelector(".header-navigation");
 const projectCounter=document.querySelector(".projectCounter");
 const stafCounter=document.querySelector(".stafCounter");
 const serviceCounter=document.querySelector(".serviceCounter");
 const constumerCounter=document.querySelector(".constumerCounter");
+const accordIcon=document.querySelectorAll('.icon-close');
 
 
 
 
 menuBtn.addEventListener("click",()=>{
-   headerNavMobile.classList.toggle("hnm-full");
+   headerNavigation.classList.toggle("hnm-full");
 
 })
 
@@ -120,34 +121,85 @@ let costumerCount=0;
 let costumerCountFraction=0;
 
 function countCostumers(){
-if(costumerCount<8)
-    constumerCounter.textContent=costumerCount+","+costumerCountFraction;
+   if(costumerCount<8)
+   constumerCounter.textContent=costumerCountFraction;
     if(costumerCountFraction==990){
        costumerCount++;
-       costumerCountFraction=0;       
+       costumerCountFraction=0;   
+         
     }  
     costumerCountFraction+=30;
     if(costumerCount==7){
       costumerCountFraction=650;
    }
+   if(costumerCount>0){
+      constumerCounter.textContent=costumerCount+","+costumerCountFraction;  
+   }
+
 
    
 }
 
 
-// Costumet copunter end
 
- function callCounters(){
-    countProjects();
-    countStaf();
-    countService();
-    countCostumers();
-
- }
+function callCounters(){
+   countProjects();
+   countStaf();
+   countService();
+   countCostumers();
+   
+}
 
 window.addEventListener("scroll",()=>{
    if(document.documentElement.scrollTop>1400)
-   setInterval(callCounters,500)
+   setInterval(callCounters,100)
 });
 
+// Costumet counter end
+
+//Accardion start
+const accordionHeaders=document.querySelectorAll(".accordion-header");
+const accordionItems=document.querySelectorAll(".accordion-item");
+
+
+for(let i=0;i<accordionHeaders.length;i++){
+   accordionHeaders[i].addEventListener("click",()=>{
+
+      
+     if(accordionItems[i].className==="accordion-item"){
+      for(let y=0;y<accordionHeaders.length;y++){
+         accordionItems[y].className="accordion-item";
+         accordionHeaders[y].className='accordion-header';
+         accordIcon[y].className='icon-close';
+         document.querySelector('.frequent-accordion').height-=50+'px';
+
+      } 
+      
+      accordionItems[i].className='accordion-item-open';
+      document.querySelector('.frequent-accordion').height+=50+'px';
+      accordionHeaders[i].className='accordion-header-open';
+      accordIcon[i].className='icon-open';
+     
+         
+     
+
+     }
+     else{
+      for(let y=0;y<accordionHeaders.length;y++){
+         accordionItems[y].className="accordion-item";
+         accordionHeaders[y].className='accordion-header';
+         document.querySelector('.frequent').height-=50+'px';
+       
+        
+      }
+      
+     }
+      
+     
+      
+
+   });
+}
+
+//Accardion end
 
