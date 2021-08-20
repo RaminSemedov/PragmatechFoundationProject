@@ -1,4 +1,4 @@
-Task 1 -  hello-world
+### Task 1 -  hello-world
 https://www.hackerrank.com/challenges/js10-hello-world/problem
 
 ```
@@ -37,7 +37,7 @@ function greeting(parameterVariable) {
 
 ```
 
-Task 2- data-types
+### Task 2- data-types
 https://www.hackerrank.com/challenges/js10-data-types
 
 ```
@@ -103,7 +103,7 @@ function performOperation(secondInteger, secondDecimal, secondString) {
 
 ```
 
-Task 3- arithmetic-operators
+### Task 3- arithmetic-operators
 https://www.hackerrank.com/challenges/js10-arithmetic-operators/problem
 
 ```
@@ -166,7 +166,7 @@ function getPerimeter(length, width) {
 
 ```
 
-Task 4-Function
+### Task 4-Function
 https://www.hackerrank.com/challenges/js10-function/problem
 
 ```
@@ -205,7 +205,7 @@ return f;
 }
 
 ```
-Task 5- If-Else
+### ### Task 5- If-Else
 https://www.hackerrank.com/challenges/js10-if-else/problem
 
 ```
@@ -247,7 +247,7 @@ function getGrade(score) {
 }
 ```
 
-Task 6-Switch
+### Task 6-Switch
 https://www.hackerrank.com/challenges/js10-switch/problem
 
 ```
@@ -324,7 +324,7 @@ function getLetter(s) {
 
 ```
 
-Task-7 Loops
+### Task-7 Loops
 
 https://www.hackerrank.com/challenges/js10-loops/problem
 
@@ -375,7 +375,7 @@ function vowelsAndConsonants(s) {
 
 ```
 
-Task 8-Arrays
+### Task 8-Arrays
 
 https://www.hackerrank.com/challenges/js10-arrays/problem
 
@@ -422,7 +422,7 @@ function getSecondLargest(nums) {
 
 ```
 
-Task-9-Create a Rectangle Object
+### Task-9-Create a Rectangle Object
 https://www.hackerrank.com/challenges/js10-objects/problem
 
 ```
@@ -470,7 +470,7 @@ function Rectangle(a, b) {
 
 
 
-Task-10 - Count Objects
+### Task-10 - Count Objects
 
 https://www.hackerrank.com/challenges/js10-count-objects/problem
 
@@ -518,4 +518,49 @@ let sum=0;
 
 
 
+```
+
+### Task-11 Let and Const
+https://www.hackerrank.com/challenges/js10-let-and-const/problem?isFullScreen=false
+
+```
+'use strict';
+
+process.stdin.resume();
+process.stdin.setEncoding('utf-8');
+
+let inputString = '';
+let currentLine = 0;
+
+process.stdin.on('data', inputStdin => {
+    inputString += inputStdin;
+});
+
+process.stdin.on('end', _ => {
+    inputString = inputString.trim().split('\n').map(string => {
+        return string.trim();
+    });
+    
+    main();    
+});
+
+function readLine() {
+    return inputString[currentLine++];
+}
+
+function main() {
+    // Write your code here. Read input using 'readLine()' and print output using 'console.log()'.
+    
+    let r=2.6; 
+      
+ 
+    const PI=Math.PI;
+    // Print the area of the circle:
+    let area=PI*(r*r);
+      console.log(area);
+    
+    // Print the perimeter of the circle:
+    let perimeter=2*PI*r
+      console.log(perimeter)
+    try {    
 ```

@@ -124,7 +124,7 @@ sort(array1);
 console.log(array1); 
 
 ```
-Task-11 - Arrow Functions
+### Task-11 - Arrow Functions
 
 https://www.hackerrank.com/challenges/js10-arrows/problem
 
