@@ -1,0 +1,21 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+   
+}
+.container{
+   
+display: grid;
+
+    
+    border:1px solid rgb(236, 11, 11);
+}
+.box{
+    display: inline-block;
+    border:1px solid black;
+   
+ 
+}
