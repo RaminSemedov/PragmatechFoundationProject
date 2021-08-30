@@ -13,6 +13,16 @@ const stafCounter=document.querySelector(".stafCounter");
 const serviceCounter=document.querySelector(".serviceCounter");
 const constumerCounter=document.querySelector(".constumerCounter");
 const accordIcon=document.querySelectorAll('.icon-close');
+const date =document.querySelectorAll('.nowDate');
+
+
+function showDate(){
+   for(let i=0;i<date.length;i++){
+      date[i].textContent=new Date().toDateString();
+
+   }
+}
+showDate();
 
 
 
@@ -200,6 +210,10 @@ for(let i=0;i<accordionHeaders.length;i++){
 
    });
 }
+
+
+
+
 
 //Accardion end
 
