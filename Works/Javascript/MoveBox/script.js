@@ -10,18 +10,32 @@ btn.style.top=document.documentElement.clientHeight/2-btn.clientHeight/2+'px';
 let x=0;
 let y=0;
 
+
+
+
 btn.addEventListener('click',()=>{
 
-    setInterval(()=>{        
-        if(box.getBoundingClientRect().right!=document.documentElement.clientWidth){
+    let interval1=setInterval(()=>{        
+        if(box.getBoundingClientRect().right!=window.innerWidth){
         box.style.transform=`translate(${x++}px)`;   }      
         else{
-            x--;
-            box.style.top=`${y++}px`;
-            if(box.getBoundingClientRect().bottom==document.documentElement.clientHeight){
-            y--;
-            }
+             clearInterval(interval1); 
+             let interval2=setInterval(()=>{  
+                if(box.getBoundingClientRect().bottom!=document.documentElement.clientHeight){
+                    box.style.top=`${y++}px`;
+                }
+                else{
+                    clearInterval(interval2);
+                }
+    
+            } ,1 )
+            
+
         }},1)
+
+        
+
+       
 
        
          

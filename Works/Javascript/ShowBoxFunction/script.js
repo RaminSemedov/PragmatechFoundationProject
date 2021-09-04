@@ -20,12 +20,8 @@ function createBoxes(boxSayi,sutunSayi,boxHundurluyu,araMefase){
              let s='';
              for(let i=0;i<sutunSayi;i++){
               s+='1fr ';
-
              }
             return s;
          }
 }
-
-
-
 createBoxes(20,2,50,5);
