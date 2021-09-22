@@ -564,3 +564,108 @@ function main() {
       console.log(perimeter)
     try {    
 ```
+### Task-12 Classes
+https://www.hackerrank.com/challenges/js10-class/problem?isFullScreen=false
+
+```
+/*
+ * Implement a Polygon class with the following properties:
+ * 1. A constructor that takes an array of integer side lengths.
+ * 2. A 'perimeter' method that returns the sum of the Polygon's side lengths.
+ */
+class Polygon{
+     sides=[];
+    constructor(sideLength){
+         for(let i=0;i<sideLength.length;i++){
+             this.sides[i]=sideLength[i];
+         }       
+    }
+    perimeter=function(){
+      let sum=0;
+      for(let i=0;i<this.sides.length;i++){
+          sum+=this.sides[i];
+      }
+      return sum;
+    }
+}
+
+
+```
+
+### Task-13 Inheritance
+
+```
+class Rectangle {
+    constructor(w, h) {
+        this.w = w;
+        this.h = h;
+    }
+}
+
+/*
+ *  Write code that adds an 'area' method to the Rectangle class' prototype
+ */
+
+Rectangle.prototype.area=function(){
+    return this.w*this.h;
+}
+
+/*
+ * Create a Square class that inherits from Rectangle and implement its class constructor
+ */
+class Square extends Rectangle{
+    
+       constructor(w){
+       super(w);
+       this.h=w;
+    }      
+}
+
+
+
+```
+
+### Task-14 Create a Button 
+https://www.hackerrank.com/challenges/js10-buttons-container
+
+```
+<!-- HTML -->
+
+<!-- Enter your HTML code here -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+         <link rel="stylesheet" href="css/button.css" type="text/css">
+        <title>Button</title>
+    </head>
+    <body>
+        <button id='btn'>0</button>
+        <script src="js/button.js" type="text/javascript"></script>
+    </body>
+</html>
+```
+
+```
+<!-- CSS -->
+
+#btn{
+    width:96px;
+    height:48px;
+    font-size:24px;
+}
+```
+```
+<!-- JS -->
+
+  let btn=document.querySelector('#btn');
+  let counter=0; 
+
+ btn.addEventListener('click',()=>{
+    
+        btn.innerHTML=++counter;
+   
+ })
+```
+
+### Task-15
